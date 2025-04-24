@@ -26,13 +26,24 @@ function App() {
           ]} />
         </Card>
         <Card title={"LIDAR Scan"} width={"half"}>
-        <PhotoCarousel images={[
+          <PhotoCarousel images={[
             "images/home/IMG_0.jpeg"
           ]} />
         </Card>
       </div>
       <Card title={"Service History"}>
+        <div className='py-12 space-y-2 flex flex-col items-center justify-center'>
+          <h1 className='font-medium text-sm text-gray-500 leading-6 text-center'>
+            <span className="bg-[#519c5a] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Essential</span>
+            means that this is a larger repair expected by MINI at a certain mileage. Having this already repaired <b className='text-black'>saves you lots of money</b> in the long run.</h1>
+          <h1 className='font-medium text-sm text-gray-500 leading-6 text-center'>
+            <span className="bg-[#518e9c] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Wear & Tear</span>
+            means smaller repairs that are expected as the car ages. These aren't typically very expensive.</h1>
+        </div>
         <ServiceHistory />
+        <div className='flex justify-center w-full h-[150px] items-center'>
+          <h1 className='font-medium text-md text-gray-500'>No problems since purchase on October 25th, 2023.</h1>
+        </div>
       </Card>
       <div className='w-screen h-[200px]' />
       <footer>

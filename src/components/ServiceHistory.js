@@ -12,7 +12,7 @@ export default function ServiceHistory() {
                 I replaced the turbo with another factory N18 turbo, with 78K miles, zero shaft play, from ALLMAG Auto Parts in Florida. Replaced all crush washers, flanges, and seals with OEM parts.\n
                 Runs great and is properly oiled now. Should last a long time!`
                 }
-                timestamp={parse("04.21.2024", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
+                timestamp={parse("04.21.2025", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
                 urgency="essential"
                 pricing={[
                     {
@@ -45,7 +45,7 @@ export default function ServiceHistory() {
                     "images/services/04.21.2025/exhaust_ports.jpeg",
                     "images/services/04.21.2025/front_end.jpeg",
                 ]}
-                hours={48}
+                hours={24*2}
             />
 
             <ServiceEntry
@@ -55,7 +55,7 @@ export default function ServiceHistory() {
                     Replaced timing chain assembly along with the gear, new chain, guides, torque to yield fasteners, rear main seal.\n
                     After installation, reset VANOS adaptations with ISTA. Luckily no more codes or limp mode!`
                 }
-                timestamp={parse("03.13.2024", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
+                timestamp={parse("03.13.2025", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
                 urgency="essential"
                 pricing={[
                     {
@@ -78,11 +78,110 @@ export default function ServiceHistory() {
                     },
                 ]}
                 images={[
-                    "images/services/03.13.24/head.jpeg",
-                    "images/services/03.13.24/timing_chain.jpeg",
-                    "images/services/03.13.24/vanos_gear.jpeg",
+                    "images/services/03.13.2025/head.jpeg",
+                    "images/services/03.13.2025/timing_chain.jpeg",
+                    "images/services/03.13.2025/vanos_gear.jpeg",
                 ]}
-                hours={72}
+                hours={24*3}
+            />
+
+            <ServiceEntry
+                title="Replaced valve cover"
+                description={
+                    `PCV diaphragm built into valve cover started leaking and created a vacuum leak, causing rough cold starts.\n
+                    Replacing the cover with a fresh one, new gaskets, and RTV on the pinch edges fixed the problem.\n
+                    Zero rough cold starts after fix! `
+                }
+                timestamp={parse("01.18.2025", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
+                urgency="wear & tear"
+                pricing={[
+                    {
+                        price: 469.99,
+                        name: 'OEM N18 Valve Cover',
+                        source: 'ECS Tuning & MINI',
+                        URL: 'https://www.ecstuning.com/b-genuine-mini-parts/valve-cover/11127646552/'
+                    },
+                ]}
+                images={[
+                    "images/services/01.18.2025/head.jpeg",
+                ]}
+                hours={2}
+            />
+
+            <ServiceEntry
+                title="Replaced valve stem seals"
+                description={
+                    `Was burning lots of oil after starting from stops, with smelly blue smoke out the exhaust.\n
+                    Replaced the valve stem seals by pulling the cams and valve springs, replacing all sixteen seals with Mahle seals.\n
+                    Zero smoking after replacement!`
+                }
+                timestamp={parse("06.25.2024", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
+                urgency="wear & tear"
+                pricing={[
+                    {
+                        price: 31.29,
+                        name: 'Mahle Valve Stem Seals',
+                        source: 'Mahle',
+                        URL: 'https://www.amazon.com/MAHLE-Original-SS46073-Engine-Valve/dp/B01GAHO79Q'
+                    },
+                    {
+                        price: 51.95,
+                        name: 'Generic valve spring compressor tool',
+                        source: 'Amazon',
+                        URL: 'https://www.amazon.com/DAYUAN-Cylinder-Service-Compressor-Installer/dp/B07SPL35XW/ref=sr_1_6?crid=9XIEOF6X4UK3&dib=eyJ2IjoiMSJ9._5jBr78pR_3bPfQJMCzh0dd0FmFCDW_Z8whdMwjGbic18W6tmGbfwVvlq-sgnBBDZzvGaK607F3whSCUZwWEsaAyO8DpAc_dgEaXqBbD5bw5AC0_t1lf2aCvY_vEyEfKBJD32IUapJ6wo5X-ecj0H7jvx11nBIA7Ernpvif3vM_djX0p_fAWqMI81fthWd1IRaH1WlanbYPEfYcMdLbxn2BoIOFFB5nn7UEt5NlZqx2_fVGh_u21nQrIFvFxP_Nfv-WOhPtoeANiyLdAVGKH-ASGWfhbDp2YbVSe6sjAbvM.QgCjMLq-9bN4UY9_MfSH59CtLGN11nTd3YRfpIWL8jw&dib_tag=se&keywords=valve+spring+compressor+bar&qid=1745473447&sprefix=valve+spring+compressor+ba%2Caps%2C156&sr=8-6'
+                    },
+                    {
+                        price: 159.99,
+                        name: 'Valvetronic spring compressor tool',
+                        source: 'Amazon',
+                        URL: 'https://www.amazon.com/Pressure-Installer-Remover-Disassembly-Intermediate/dp/B082DZRC7Z/ref=sr_1_5?crid=RCT26XLFZK6J&dib=eyJ2IjoiMSJ9.KWs2w_JXYHLUrrVTPrCAF6yZc-uHBYSk7PezZ-dULn_lfjiCKRawDcVdzh9MTdGMNZANPSkY9tc6Bi0s6hA9Klxmb4vDGN4GzGiA58K9Bi2H0JR8XCYoemAOVJ9ISnWOrHDmuW11gcgxOhqFCbJzb0hFmzhhzdZ4Y9FMRQ0ia9Jn2PN49g-VsG48wK_bjaqD4GoXF3lhgaQYiyFAyWdgo9bX-NghJpPbR4tCw8hzrIuNUVKn1LU6AikbvmmgPcpMEfgRfYTP2mGKvsyeSPQ6kXK_jRZB3usfEq3qrZRd6hc.TmxhKyz9qLMabSUzQp7odIj3NlCVa_5F-5Zm3q1NeJs&dib_tag=se&keywords=n18%2Bvalvetronic%2Bspring%2Bcompressor%2Btool&qid=1745473494&sprefix=n18%2Bvalvetronic%2Bspring%2Bcompressor%2Btoo%2Caps%2C215&sr=8-5&th=1'
+                    },
+                ]}
+                images={[
+                    "images/services/06.25.2024/cams_out.jpg",
+                    "images/services/06.25.2024/seals.jpg",
+                    "images/services/06.25.2024/head.jpg",
+                    "images/services/06.25.2024/timing.jpg",
+                    "images/services/06.25.2024/car.jpg",
+                    "images/services/06.25.2024/parts.jpg",
+                ]}
+                hours={24*5}
+            />
+
+<ServiceEntry
+                title="Replaced water pump, coolant crossover pipe"
+                description={
+                    `Water pump and coolant crossover pipe going to the thermostat failed and were leaking coolant onto the ground overnight, so replaced both with OEM replacements.\n
+                    Replaced the pump, pulley, and crossover pipe. No more leaking and temps are perfect.`
+                }
+                timestamp={parse("06.13.2024", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
+                urgency="essential"
+                pricing={[
+                    {
+                        price: 161.99,
+                        name: 'OEM Water Pump',
+                        source: 'ECS Tuning & MINI',
+                        URL: 'https://www.ecstuning.com/b-genuine-mini-parts/water-pump/11517648827/'
+                    },
+                    {
+                        price: 41.99,
+                        name: 'Water Pump Pulley',
+                        source: 'ECS Tuning & Dayco',
+                        URL: 'https://www.ecstuning.com/b-dayco-parts/drive-wheel-for-water-pump/11517619020~day/'
+                    },
+                    {
+                        price: 16.19,
+                        name: 'Coolant Crossover Pipe',
+                        source: 'ECS Tuning & Bremmen Parts',
+                        URL: 'https://www.ecstuning.com/b-bremmen-parts/water-pipe-with-clip/11537589713~brp/'
+                    },
+                ]}
+                images={[
+                    "images/services/06.13.2024/water_pumps.jpg",
+                    "images/services/06.13.2024/crossover_pipe.jpg",
+                    "images/services/06.13.2024/pulleys.jpg",
+                ]}
+                hours={24*3}
             />
         </>
     );
