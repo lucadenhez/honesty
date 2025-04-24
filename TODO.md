@@ -1,0 +1,4 @@
+- Tweak carousel buttons
+- Make print feature functional
+- Add modifications card
+- Fix weird flex bias with react three fiber canvas

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TitleCard from './components/TitleCard';
 import PrintButton from './components/PrintButton';
@@ -6,6 +5,7 @@ import CarPreview from './components/CarPreview';
 import Card from './components/Card';
 import PhotoCarousel from './components/PhotoCarousel';
 import ServiceHistory from './components/ServiceHistory';
+import ModificationHistory from './components/ModificationHistory';
 
 
 function App() {
@@ -22,13 +22,22 @@ function App() {
       <div className='flex flex-grow basis-full lg:flex-row flex-col w-full gap-x-3 gap-y-3'>
         <Card title={"Photos"} width={"half"}>
           <PhotoCarousel images={[
-            "images/home/IMG_0.jpeg"
+            "images/home/0.jpg",
+            "images/home/1.jpg",
+            "images/home/2.jpg",
+            "images/home/3.jpg",
+            "images/home/4.jpg",
+            "images/home/5.jpg",
+            "images/home/6.jpg",
+            "images/home/7.jpg",
+            "images/home/8.jpg",
+            "images/home/9.jpg",
+            "images/home/10.jpg",
+            "images/home/11.jpg",
           ]} />
         </Card>
         <Card title={"LIDAR Scan"} width={"half"}>
-          <PhotoCarousel images={[
-            "images/home/IMG_0.jpeg"
-          ]} />
+          <CarPreview modelPath="models/R56.glb" hdriPath="hdri/skylit_garage_4k.hdr" />
         </Card>
       </div>
       <Card title={"Service History"}>
@@ -42,23 +51,22 @@ function App() {
         </div>
         <ServiceHistory />
         <div className='flex justify-center w-full h-[150px] items-center'>
-          <h1 className='font-medium text-md text-gray-500'>No problems since purchase on October 25th, 2023.</h1>
+          <h1 className='font-medium text-md text-center text-gray-500'>No problems since purchase on October 25th, 2023.</h1>
         </div>
+      </Card>
+      <Card title={"Modifications"}>
+        <ModificationHistory />
       </Card>
       <div className='w-screen h-[200px]' />
       <footer>
         <div className='flex flex-row gap-x-2 justify-center w-full text-sm text-gray-500'>
           <p className='px-3 py-2 rounded-xl bg-white text-black'>Created by Luca Denhez</p>
-          <a target='_blank' href="https://instagram.com/lucadenhez" className='hover:opacity-80 transition-opacity duration-200 ease-in-out'>
-            <p className='px-3 py-2 rounded-xl bg-[#993e5c] text-white'>Instagram</p>
-          </a>
-          <a target='_blank' href="https://www.linkedin.com/in/lucadenhez" className='hover:opacity-80 transition-opacity duration-200 ease-in-out'>
-            <p className='px-3 py-2 rounded-xl bg-[#2c5074] text-white'>Linkedin</p>
+          <a target='_blank' href="https://github.com/lucadenhez/honesty" className='hover:opacity-80 transition-opacity duration-200 ease-in-out'>
+            <p className='px-3 py-2 rounded-xl bg-black text-white'>View this project on Github</p>
           </a>
         </div>
       </footer>
     </div>
-
   );
 }
 

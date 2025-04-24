@@ -3,12 +3,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import IconLink from "./IconLink";
 import PhotoCarousel from "./PhotoCarousel";
 
-const urgencyCodes = {
-    "essential": "#519c5a",
-    "wear & tear": "#518e9c",
-};
 
-export default function ServiceEntry({ title, description, timestamp, images, pricing, hours, urgency, link, info }) {
+export default function ModificationEntry({ title, description, timestamp, images, pricing, hours, link, info }) {
     let totalCost = 0.00;
 
     for (var i = 0; i < pricing.length; i++) {
@@ -21,9 +17,7 @@ export default function ServiceEntry({ title, description, timestamp, images, pr
                 <span className="pr-4 text-sm font-medium text-left lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{title}</span>
                 <div className="flex items-center gap-x-5 justify-end">
                     <div className="flex lg:flex-row flex-col-reverse items-center gap-x-5 gap-y-2">
-                        <div className="uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4"
-                            style={{ backgroundColor: urgencyCodes[urgency] }}
-                        >{urgency}</div>
+                        
                         <span className="text-sm font-medium lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{format(timestamp, "MM.dd.yyyy")}</span>
                     </div>
                     <img src="/icons/chevron.svg" alt="Close Dropdown" width={20} height={20} className="size-5 fill-white/60 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />

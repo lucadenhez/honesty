@@ -46,6 +46,8 @@ export default function ServiceHistory() {
                     "images/services/04.21.2025/front_end.jpeg",
                 ]}
                 hours={24*2}
+                info="The turbocharger was given to the Mini Cooper S and Mini Cooper JCW starting in the second generation. This gives the car 60 more horsepower, and lots of lovely noises. The car cannot be driven with a broken turbocharger."
+                link="https://www.carwow.co.uk/guides/glossary/how-turbos-work-superchargers-explained"
             />
 
             <ServiceEntry
@@ -83,6 +85,8 @@ export default function ServiceHistory() {
                     "images/services/03.13.2025/vanos_gear.jpeg",
                 ]}
                 hours={24*3}
+                info="The N18 engine has a system called VANOS on both the intake and exhaust side. This is variable valve timing (VVT), which means each camshaft can advance and retard with oil pressure. If the camshaft sprocket fails, the VANOS will not be able to change timing."
+                link="https://bimmers.com/blog/bmw-vanos-explained-what-it-does-why-it-fails-and-how-to-fix-it/"
             />
 
             <ServiceEntry
@@ -106,6 +110,8 @@ export default function ServiceHistory() {
                     "images/services/01.18.2025/head.jpeg",
                 ]}
                 hours={2}
+                info="The valve cover has an integrated PCV diaphgram, which is what regulates the pressure in the crankcase. A failing valve cover will allow unmetered air into the crankcase, upsetting the pressure and caughing rough idle, cold start, etc."
+                link="https://www.drivensd.com/post/bmw-valve-covers-and-valve-cover-gaskets-and-crankcase-ventilation-pcv"
             />
 
             <ServiceEntry
@@ -146,6 +152,8 @@ export default function ServiceHistory() {
                     "images/services/06.25.2024/parts.jpg",
                 ]}
                 hours={24*5}
+                info="Valve stem seals lubricate the valve guides which are in constant movement, while keeping oil from entering the combustion chamber. However, when these seals age from time and heat, they become hard and expand, allowing oil to drip down the stem, and enter the combustion chamber on the intake stroke. This burns oil, not good."
+                link="https://www.carparts.com/blog/valve-stem-seals-guide-definition-types-signs-of-failure/"
             />
 
 <ServiceEntry
@@ -182,6 +190,8 @@ export default function ServiceHistory() {
                     "images/services/06.13.2024/pulleys.jpg",
                 ]}
                 hours={24*3}
+                info="The water pump is what circulates coolant throughout the engine to keep it cool. The crossover pipe sends water from the water pump to the thermostat, to get distributed throughout various components. These parts often fail with time, due to their brittle plastic nature and constant movement."
+                link="https://haynes.com/en-gb/tips-tutorials/what-is-water-pump-car"
             />
         </>
     );
