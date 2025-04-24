@@ -1,30 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
 import TitleCard from './components/TitleCard';
-import ServiceDocsButton from './components/ServiceDocsButton';
+import PrintButton from './components/PrintButton';
 import CarPreview from './components/CarPreview';
 import Card from './components/Card';
 import PhotoCarousel from './components/PhotoCarousel';
-import ServiceEntry from './components/ServiceEntry';
-import Loader from './components/Loader';
 import ServiceHistory from './components/ServiceHistory';
 
 
 function App() {
   return (
-    <div className='my-10 mx-4 md:mx-10 space-y-3'>
+    <div className='my-10 mx-4 sm:mx-20 md:mx-[10rem] lg:mx-[12rem] space-y-3'>
       <header>
         <div className='flex flex-row justify-between pb-5'>
           <TitleCard make={"Mini"} model={"Cooper S"} year={2011} mileage={113000} motor={"N18 1.6T"} transmission={"6MT"} LCI={true} color={"Pepper White"} />
-          <ServiceDocsButton />
+          <div className='lg:inline-block hidden'>
+            <PrintButton />
+          </div>
         </div>
       </header>
-      <div className='flex flex-grow basis-full md:flex-row flex-col w-full gap-x-3 gap-y-3'>
+      <div className='flex flex-grow basis-full lg:flex-row flex-col w-full gap-x-3 gap-y-3'>
         <Card title={"Photos"} width={"half"}>
-          <PhotoCarousel images={"images/home"} />
+          <PhotoCarousel images={[
+            "images/home/IMG_0.jpeg"
+          ]} />
         </Card>
         <Card title={"LIDAR Scan"} width={"half"}>
-          <CarPreview modelPath={"models/R56.glb"} hdriPath={"hdri/skylit_garage_4k.hdr"} />
+        <PhotoCarousel images={[
+            "images/home/IMG_0.jpeg"
+          ]} />
         </Card>
       </div>
       <Card title={"Service History"}>
