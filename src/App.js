@@ -61,6 +61,9 @@ function App() {
       <Card title={"Modifications"}>
         <ModificationHistory />
       </Card>
+      <Card title={"Pricing"}>
+        
+      </Card>
       <div className='w-screen h-[200px]' />
       <footer>
         <div className='flex flex-row gap-x-2 justify-center w-full text-sm text-gray-500'>
