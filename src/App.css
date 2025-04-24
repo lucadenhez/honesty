@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.image-gallery-content:not(.fullscreen) .image-gallery-slide:not(.fullscreen) .image-gallery-image:not(.fullscreen) {
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+.image-gallery-image {
+  border-radius: 0.75rem;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  object-fit: cover;
+}

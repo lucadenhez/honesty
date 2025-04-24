@@ -8,6 +8,10 @@ export default function ServiceDocsButton() {
 
     }
 
+    /*
+    <DialogBackdrop className="fixed inset-0 backdrop-blur-sm" />
+    */
+
     return (
         <>
             <button onClick={() => setModalOpen(true)}
@@ -17,10 +21,10 @@ export default function ServiceDocsButton() {
             </button>
             <Dialog open={modalOpen}
                 onClose={() => setModalOpen(false)}
-                className="relative z-50 transition duration-300 ease-out data-[closed]:opacity-0"
+                className="relative z-50 transition duration-200 ease-out data-[closed]:opacity-0"
                 transition
             >
-                <DialogBackdrop className="fixed inset-0 backdrop-blur-sm" />
+                
                 <div className='fixed inset-0 flex w-screen items-center justify-center p-4'>
                     <DialogPanel className="max-w-[32rem] space-y-4 p-12 bg-white border-2 border-gray-200 rounded-xl shadow-lg">
                         <DialogTitle className="text-2xl font-semibold">Documentation</DialogTitle>
