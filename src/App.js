@@ -7,15 +7,19 @@ import PhotoCarousel from './components/PhotoCarousel';
 import ServiceHistory from './components/ServiceHistory';
 import ModificationHistory from './components/ModificationHistory';
 
+import { useRef } from 'react';
+
 
 function App() {
+  const contentRef = useRef(null);
+
   return (
-    <div className='my-10 mx-4 sm:mx-20 md:mx-[10rem] lg:mx-[12rem] space-y-3'>
+    <div ref={contentRef} className='my-10 mx-4 sm:mx-20 md:mx-[10rem] lg:mx-[12rem] space-y-3'>
       <header>
         <div className='flex flex-row justify-between pb-5'>
           <TitleCard make={"Mini"} model={"Cooper S"} year={2011} mileage={113000} motor={"N18 1.6T"} transmission={"6MT"} LCI={true} color={"Pepper White"} />
           <div className='lg:inline-block hidden'>
-            <PrintButton />
+            <PrintButton contentRef={contentRef} />
           </div>
         </div>
       </header>
