@@ -16,7 +16,7 @@ Buying used cars is a tricky process. Scams, forged maintenance records, and mis
 - Clean, user-friendly interface
 - No BS, no fluff — just the facts that matter
 
-Check it out here: [![Website](https://img.shields.io/badge/Visit%20Honesty-f66a6a)](https://honesty.lucadenhez.com)
+[![Website](https://img.shields.io/badge/Visit%20Honesty!-f66a6a)](https://honesty.lucadenhez.com)
 
 ---
 
