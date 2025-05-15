@@ -1,26 +1,36 @@
 import './App.css';
 import TitleCard from './components/TitleCard';
-import PrintButton from './components/PrintButton';
 import CarPreview from './components/CarPreview';
 import Card from './components/Card';
 import PhotoCarousel from './components/PhotoCarousel';
 import ServiceHistory from './components/ServiceHistory';
 import ModificationHistory from './components/ModificationHistory';
 
-import { useRef } from 'react';
+import { Field, Label, Switch } from '@headlessui/react'
+import { useRef, useState, useEffect } from 'react';
 
 
 function App() {
   const contentRef = useRef(null);
+  const [enabled, setEnabled] = useState(true);
+  const [finalPrice, setFinalPrice] = useState(6500);
+
+  const priceDelta = 1500;
+
+  useEffect(() => {
+    console.log(`Aero kit? ${enabled}`);
+    if (enabled) {
+      setFinalPrice(finalPrice + priceDelta);
+    } else {
+      setFinalPrice(finalPrice - priceDelta);
+    }
+  }, [enabled]);
 
   return (
     <div ref={contentRef} className='my-10 mx-4 sm:mx-20 md:mx-[10rem] lg:mx-[12rem] space-y-3'>
       <header>
-        <div className='flex flex-row justify-between pb-5'>
+        <div className='pb-5'>
           <TitleCard make={"Mini"} model={"Cooper S"} year={2011} mileage={113000} motor={"N18 1.6T"} transmission={"6MT"} LCI={true} color={"Pepper White"} />
-          <div className='lg:inline-block hidden'>
-            <PrintButton contentRef={contentRef} />
-          </div>
         </div>
       </header>
       <div className='flex flex-grow basis-full lg:flex-row flex-col w-full gap-x-3 gap-y-3'>
@@ -62,14 +72,32 @@ function App() {
         <ModificationHistory />
       </Card>
       <Card title={"Pricing"}>
-        
+        <div className="flex justify-between items-center">
+          <h1 className='font-semibold lg:text-3xl text-xl'>${finalPrice} OBO</h1>
+          <Field className="flex flex-col gap-2">
+            <div className="flex items-center gap-4">
+              <Label className="grow text-sm lg:text-base">Include Aero Kit II</Label>
+              <Switch
+                checked={enabled}
+                onChange={setEnabled}
+                defaultChecked
+                className="group flex h-6 w-12 shrink-0 rounded-full border-4 border-transparent bg-neutral-400 duration-100 ease-in-out transition-colors data-[checked]:bg-emerald-600"
+              >
+                <span
+                  aria-hidden
+                  className="pointer-events-none h-4 w-4 translate-x-0 rounded-full bg-white transition-transform group-data-[checked]:translate-x-6"
+                />
+              </Switch>
+            </div>
+          </Field>
+        </div>
       </Card>
       <div className='w-screen h-[200px]' />
       <footer>
-        <div className='flex flex-row gap-x-2 justify-center w-full text-sm text-gray-500'>
-          <p className='px-3 py-2 rounded-xl bg-white text-black'>Created by Luca Denhez</p>
+        <div className='flex lg:flex-row flex-col gap-2 justify-center items-center w-full text-sm text-gray-500'>
+          <p className='w-fit px-3 py-2 rounded-xl bg-white text-black'>Created by Luca Denhez</p>
           <a target='_blank' href="https://github.com/lucadenhez/honesty" className='hover:opacity-80 transition-opacity duration-200 ease-in-out'>
-            <p className='px-3 py-2 rounded-xl bg-black text-white'>View this project on Github</p>
+            <p className='w-fit px-3 py-2 rounded-xl bg-black text-white'>View this project on Github</p>
           </a>
         </div>
       </footer>
