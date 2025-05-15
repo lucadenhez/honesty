@@ -18,7 +18,6 @@ function App() {
   const priceDelta = 1500;
 
   useEffect(() => {
-    console.log(`Aero kit? ${enabled}`);
     if (enabled) {
       setFinalPrice(finalPrice + priceDelta);
     } else {
