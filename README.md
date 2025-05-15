@@ -1,6 +1,6 @@
 # Honesty
 
-[![Website](https://img.shields.io/badge/visit-website-blue)](https://honesty.lucadenhez.com)
+[![Website](https://img.shields.io/badge/Visit%20Honesty-red)](https://honesty.lucadenhez.com)
 
 Buying used cars is a tricky process. Scams, forged maintenance records, and misleading information are far too common in the world of secondhand vehicles. **Honesty** aims to change that.
 
