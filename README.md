@@ -16,7 +16,7 @@ Buying used cars is a tricky process. Scams, forged maintenance records, and mis
 - Modification history to know what you're buying into
 - 3D LIDAR scan viewer to look at the car from any angle, even far away
 
-[![Website](https://img.shields.io/badge/Visit%20Honesty!-f66a6a)](https://honesty.lucadenhez.com)
+[![Website](https://img.shields.io/badge/View%20my%20car%20on%20Honesty!-f66a6a)](https://honesty.lucadenhez.com)
 
 ---
 
