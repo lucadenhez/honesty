@@ -1,6 +1,8 @@
 # Honesty
 
-[![Website](https://img.shields.io/badge/Visit%20Honesty!-f66a6a)](https://honesty.lucadenhez.com)
+[![Made in React](https://img.shields.io/badge/Made%20in-React-61DAFB?logo=react&logoColor=white)](https://reactjs.org)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![Instagram](https://img.shields.io/badge/lucadenhez-E4405F?logo=instagram&logoColor=white)](https://instagram.com/lucadenhez)
 
 Buying used cars is a tricky process. Scams, forged maintenance records, and misleading information are far too common in the world of secondhand vehicles. **Honesty** aims to change that.
 
@@ -14,7 +16,7 @@ Buying used cars is a tricky process. Scams, forged maintenance records, and mis
 - Clean, user-friendly interface
 - No BS, no fluff — just the facts that matter
 
-Check it out here: [https://honesty.lucadenhez.com](https://honesty.lucadenhez.com)
+Check it out here: [![Website](https://img.shields.io/badge/Visit%20Honesty-f66a6a)](https://honesty.lucadenhez.com)
 
 ---
 
