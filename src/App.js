@@ -26,7 +26,7 @@ function App() {
   }, [enabled]);
 
   return (
-    <div ref={contentRef} className='my-10 mx-4 sm:mx-20 md:mx-[10rem] lg:mx-[12rem] space-y-3'>
+    <div ref={contentRef} className='my-10 mx-4 sm:mx-20 md:mx-[3rem] lg:mx-[12rem] space-y-3'>
       <header>
         <div className='pb-5'>
           <TitleCard make={"Mini"} model={"Cooper S"} year={2011} mileage={113000} motor={"N18 1.6T"} transmission={"6MT"} LCI={true} color={"Pepper White"} />
@@ -56,10 +56,10 @@ function App() {
       <Card title={"Service History"}>
         <div className='py-12 space-y-2 flex flex-col items-center justify-center'>
           <h1 className='font-medium text-sm text-gray-500 leading-6 text-center'>
-            <span className="bg-[#519c5a] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Essential</span>
+            <span className="bg-[#e64242] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Essential</span>
             means that this is a larger repair expected by MINI at a certain mileage. Having this already repaired <b className='text-black'>saves you lots of money</b> in the long run.</h1>
           <h1 className='font-medium text-sm text-gray-500 leading-6 text-center'>
-            <span className="bg-[#518e9c] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Wear & Tear</span>
+            <span className="bg-[#f9a927] inline my-2 mr-2 uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4">Wear</span>
             means smaller repairs that are expected as the car ages. These aren't typically very expensive.</h1>
         </div>
         <ServiceHistory />

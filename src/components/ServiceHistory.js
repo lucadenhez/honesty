@@ -97,7 +97,7 @@ export default function ServiceHistory() {
                     Zero rough cold starts after fix! `
                 }
                 timestamp={parse("01.18.2025", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
-                urgency="wear & tear"
+                urgency="wear"
                 pricing={[
                     {
                         price: 469.99,
@@ -122,7 +122,7 @@ export default function ServiceHistory() {
                     Zero smoking after replacement!`
                 }
                 timestamp={parse("06.25.2024", "MM.dd.yyyy", new Date())} // Temporary timestamp addition before official picker
-                urgency="wear & tear"
+                urgency="wear"
                 pricing={[
                     {
                         price: 31.29,

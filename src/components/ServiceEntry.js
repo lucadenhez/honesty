@@ -4,8 +4,8 @@ import IconLink from "./IconLink";
 import PhotoCarousel from "./PhotoCarousel";
 
 const urgencyCodes = {
-    "essential": "#519c5a",
-    "wear & tear": "#518e9c",
+    "essential": "#e64242",
+    "wear": "#f9a927",
 };
 
 export default function ServiceEntry({ title, description, timestamp, images, pricing, hours, urgency, link, info }) {
@@ -18,7 +18,7 @@ export default function ServiceEntry({ title, description, timestamp, images, pr
     return (
         <Disclosure as="div" defaultOpen={false} className="mb-1 rounded-xl bg-gray-100 ">
             <DisclosureButton className="group flex w-full items-center justify-between p-5">
-                <span className="pr-4 text-sm font-medium text-left lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{title}</span>
+                <span className="pr-10 text-sm truncate font-medium text-left lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{title}</span>
                 <div className="flex items-center gap-x-5 justify-end">
                     <div className="flex lg:flex-row flex-col-reverse items-center gap-x-5 gap-y-2">
                         <div className="uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4"

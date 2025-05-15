@@ -1,5 +1,4 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import IconLink from "./IconLink";
 import PhotoCarousel from "./PhotoCarousel";
 
 
@@ -14,7 +13,7 @@ export default function ModificationEntry({ title, description, images, category
     return (
         <Disclosure as="div" defaultOpen={false} className="mb-1 rounded-xl bg-gray-100 ">
             <DisclosureButton className="p-5 group flex w-full items-center justify-between">
-                <span className="pr-4 text-sm font-medium text-left lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{title}</span>
+                <span className="pr-10 text-sm truncate font-medium text-left lg:leading-[1.15rem] leading-4 text-black group-data-[hover]:text-black/80">{title}</span>
                 <div className="flex items-center gap-x-5 justify-end">
                     <div className="flex lg:flex-row flex-col-reverse items-center gap-x-5 gap-y-2">
                         <div className="uppercase px-2 py-1 w-fit h-fit text-white font-bold rounded-md text-xs text-left lg:leading-[1.15rem] leading-4"
