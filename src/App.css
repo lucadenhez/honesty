@@ -16,5 +16,5 @@
 }
 
 .image-gallery-slides {
-  touch-action: auto !important;
+  touch-action: pan-y !important;
 }
