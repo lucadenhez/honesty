@@ -14,3 +14,7 @@
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   object-fit: cover;
 }
+
+.image-gallery-slides {
+  touch-action: auto !important;
+}

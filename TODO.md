@@ -1,4 +1,6 @@
 - Tweak carousel buttons
-- Make print and PDF features work better
-- Add modifications card
 - Fix weird flex bias with react three fiber canvas
+- Add feature to add your own car (figure out UUID in URL bar? firebase?)
+- Fix cannot scroll on gallery
+- Add 3D tooltips to AR scan
+- Image loading
