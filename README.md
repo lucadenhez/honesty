@@ -12,12 +12,12 @@ Buying used cars is a tricky process. Scams, forged maintenance records, and mis
 
 ### ✨ Features
 
-- Straightforward vehicle reference sheets
-- Clean, user-friendly interface
-- No BS, no fluff — just the facts that matter
+- Detailed service history with part invoices, job durations, and price breakdown
+- Modification history to know what you're buying into
+- 3D LIDAR scan viewer to look at the car from any angle, even far away
 
 [![Website](https://img.shields.io/badge/Visit%20Honesty!-f66a6a)](https://honesty.lucadenhez.com)
 
 ---
 
-Help build a more transparent used car marketplace — one vehicle at a time.
+Let's help build a more transparent used car marketplace - one vehicle at a time.
