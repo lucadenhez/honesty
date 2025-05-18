@@ -7,14 +7,14 @@ export default function TitleCard({ make, model, year, mileage, transmission, mo
             <h1 className='text-2xl lg:text-3xl font-semibold'>{`${make} ${model}`}</h1>
             <div className="flex lg:flex-row flex-col gap-x-1 gap-y-1 lg:items-center">
                 <div className="flex flex-row gap-x-1 items-center">
-                    <div className="px-2 w-fit h-fit bg-purple-200 rounded-md md:text-base text-xs">{year}</div>
-                    <div className="px-2 w-fit h-fit bg-[#f4f3e1] rounded-md md:text-base text-xs">{color}</div>
-                    <div className="px-2 w-fit h-fit bg-green-200 rounded-md md:text-base text-xs">{`${mileage} miles`}</div>
+                    <span className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-md font-medium text-indigo-600 ring-1 ring-indigo-500/10 ring-inset">{year}</span>
+                    <span className="inline-flex items-center rounded-md bg-[#f4f3e1] px-2 py-1 text-md font-medium text-[#616055] ring-1 ring-[#e5e4d3] ring-inset">{color}</span>
+                    <span className="inline-flex items-center rounded-md bg-emerald-50 px-2 py-1 text-md font-medium text-emerald-600 ring-1 ring-emerald-600/10 ring-inset">{`${mileage} miles`}</span>
                 </div>
                 <div className="flex flex-row gap-x-1 items-center">
-                    <div className="px-2 w-fit h-fit text-white bg-[#f66a6a] rounded-md md:text-base text-xs">{motor}</div>
-                    <div className="px-2 w-fit h-fit text-white bg-[#fe9c2c] rounded-md md:text-base text-xs">{transmission}</div>
-                    <div className="px-2 w-fit h-fit text-white bg-[#e42f2f] rounded-md md:text-base text-xs">{LCI ? "LCI" : "PRE LCI"}</div>
+                    <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-md font-medium text-yellow-600 ring-1 ring-yellow-500/10 ring-inset">{motor}</span>
+                    <span className="inline-flex items-center rounded-md bg-lime-50 px-2 py-1 text-md font-medium text-lime-600 ring-1 ring-lime-500/10 ring-inset">{transmission}</span>
+                    <span className="inline-flex items-center rounded-md bg-orange-50 px-2 py-1 text-md font-medium text-orange-600 ring-1 ring-orange-500/10 ring-inset">{LCI ? "LCI" : "PRE LCI"}</span>
                 </div>
             </div>
         </div>

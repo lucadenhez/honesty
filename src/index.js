@@ -7,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="heropattern-banknote-blue-900/10">
+      <App />
+    </div>
   </React.StrictMode>
 );
 
