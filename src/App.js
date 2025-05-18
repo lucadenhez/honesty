@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div ref={contentRef} className='mx-4 sm:mx-20 md:mx-[3rem] lg:mx-[12rem] space-y-3'>
-      <header className='pt-10'>
+      <header className='pt-5 lg:pt-10 md:pt-10 sm:pt-10'>
         <Card>
           <div className='bg-white rounded-lg flex flex-grow justify-between basis-full lg:flex-row flex-col w-full gap-x-3 gap-y-3'>
             <TitleCard
